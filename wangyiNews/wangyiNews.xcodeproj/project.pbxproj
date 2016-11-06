@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E4AC4EA38405B0F04FF888 /* libPods-wangyiNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E81CACACDC9662FE17C4CD /* libPods-wangyiNews.a */; };
 		7622B8141DCF2EB300D39A9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7622B8131DCF2EB300D39A9D /* main.m */; };
 		7622B8171DCF2EB300D39A9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7622B8161DCF2EB300D39A9D /* AppDelegate.m */; };
 		7622B81A1DCF2EB400D39A9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7622B8191DCF2EB400D39A9D /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C51F2359FDB11DBFD1AAA11 /* Pods-wangyiNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wangyiNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-wangyiNews/Pods-wangyiNews.release.xcconfig"; sourceTree = "<group>"; };
 		7622B80F1DCF2EB300D39A9D /* wangyiNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wangyiNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7622B8131DCF2EB300D39A9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7622B8151DCF2EB300D39A9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,9 @@
 		7622B81E1DCF2EB400D39A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7622B8211DCF2EB400D39A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7622B8231DCF2EB400D39A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7622B8291DCF3F8000D39A9D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		95E81CACACDC9662FE17C4CD /* libPods-wangyiNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wangyiNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A24A8F1B0F4B01CDD69627 /* Pods-wangyiNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wangyiNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wangyiNews/Pods-wangyiNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E4AC4EA38405B0F04FF888 /* libPods-wangyiNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060323C8AFF7426D612A3391 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95E81CACACDC9662FE17C4CD /* libPods-wangyiNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7622B8061DCF2EB300D39A9D = {
 			isa = PBXGroup;
 			children = (
 				7622B8111DCF2EB300D39A9D /* wangyiNews */,
 				7622B8101DCF2EB300D39A9D /* Products */,
+				85B89D9884B59871766FD73E /* Pods */,
+				060323C8AFF7426D612A3391 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +91,18 @@
 			isa = PBXGroup;
 			children = (
 				7622B8131DCF2EB300D39A9D /* main.m */,
+				7622B8291DCF3F8000D39A9D /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85B89D9884B59871766FD73E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A24A8F1B0F4B01CDD69627 /* Pods-wangyiNews.debug.xcconfig */,
+				5C51F2359FDB11DBFD1AAA11 /* Pods-wangyiNews.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7622B8261DCF2EB400D39A9D /* Build configuration list for PBXNativeTarget "wangyiNews" */;
 			buildPhases = (
+				E85A346708E69F2480F7B895 /* [CP] Check Pods Manifest.lock */,
 				7622B80B1DCF2EB300D39A9D /* Sources */,
 				7622B80C1DCF2EB300D39A9D /* Frameworks */,
 				7622B80D1DCF2EB300D39A9D /* Resources */,
+				DA29CF552B9988F59867B268 /* [CP] Embed Pods Frameworks */,
+				29DBF466D16D76AD693508EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29DBF466D16D76AD693508EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wangyiNews/Pods-wangyiNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA29CF552B9988F59867B268 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wangyiNews/Pods-wangyiNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E85A346708E69F2480F7B895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7622B80B1DCF2EB300D39A9D /* Sources */ = {
@@ -268,6 +345,7 @@
 		};
 		7622B8271DCF2EB400D39A9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A24A8F1B0F4B01CDD69627 /* Pods-wangyiNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wangyiNews/Info.plist;
@@ -279,6 +357,7 @@
 		};
 		7622B8281DCF2EB400D39A9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C51F2359FDB11DBFD1AAA11 /* Pods-wangyiNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wangyiNews/Info.plist;
@@ -307,6 +386,7 @@
 				7622B8281DCF2EB400D39A9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
